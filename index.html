@@ -1,118 +1,407 @@
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>My test page</title>
-  <link href="styles/style.css" rel="stylesheet">
+<meta charset="utf-8">
+<!-- <link href="styles/style.css" rel="stylesheet">
+<script src="scripts/script.js"></script> -->
+<style>
+#linkTest{
+color:red;
+}
+html{
+  margin: 0;
+}
+body{
+
+}
+nav {
+  margin: 0;
+  height: auto;
+  background-color: #cccccc;
+}
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+.nav_layout_center {
+  width:900px;
+  height: 50px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+.nav_btn{
+  display: inline-block;
+  background-color: red;
+  color: white;
+  width:100px;
+  padding: 14px 0;
+  text-align: center;
+  float:right;
+}
+.side_nav{
+  position: fixed;
+  right:30px;
+  top:100px;
+}
+.side_nav_btn{
+  background-color: white;
+  border:1px solid #666666;
+  width: 160px;
+  display: block;
+}
+
+.block_side_nav{
+  position: sticky;
+  width:120px;
+  top:60px;
+  margin:0 0 0 -200px;
+}
+.block_side_nav_btn{
+  background-color: white;
+  border:1px solid #666666;
+  padding:6px 8px;
+  display: block;
+}
+.block1_tt{
+  position: sticky;
+  top:0;
+  font-size: 36px;
+  font-weight:bold;
+  background-color: white;
+}
+.block2_content{
+  height: 500px;
+}
+.txt_p {
+  display: block;
+  border: none;
+}
+</style>
+
 </head>
 <body>
-  <div class="navbar">
+  <nav>
+    <div class="nav_layout_center">
       <div class="image_logo">
-        <img src="" title="logo-image">
+        <img src="" alt="">
       </div>
-      <div class="nav_button_group">
-        <a href="index.html">
-        <div class="nav_button">
-          元型
-        </div>
-
-        <a href="design-style.html">
-        <div class="nav_button">
-          风格
-        </div>
-
-        <a href="png8.html">
-        <div class="nav_button">
-          素材库
-        </div>
-        </a>
-
-        <a href="text-hub.html">
-        <div class="nav_button">
-          文案库
-        </div>
-        </a>
-      </div>
+      <div class="nav_btn">文案库</div>
+      <div class="nav_btn">Models</div>
+    </div>
+  </nav>
+  <div class="side_nav">
+    <div class="side_nav_btn" >
+        <a href="#pdt_post">产品海报</a>
+    </div>
+    <div class="side_nav_btn" >
+        <a href="#designer_says">设计师说</a>
+    </div>
+    <div class="side_nav_btn">
+        <a href="#pdt_info">产品信息</a>
+    </div>
+    <div class="side_nav_btn">
+          <a href="#fabric_display">面料展示</a>
+    </div>
+    <div class="side_nav_btn">
+      <a href="#model_display">模特展示</a>
+    </div>
+    <div class="side_nav_btn">
+      <a href="#lay_display">平铺展示</a>
+    </div>
+    <div class="side_nav_btn">
+      <a href="#detail_display">细节展示</a>
+    </div>
+    <div class="side_nav_btn">
+      <a href="#service_notice">服务说明</a>
+    </div>
   </div>
-  <main style="display:block;">
-    <div class="ori01">
-      <div class="ori_image_01">
-        蓝黄帽子
-        <img class="mainPic" id="mainPic01" src="images/2016-11-22-23-56-25.jpg" alt="My test image">
+  <main>
+    <div class="block1">
+      <div class="block1_tt" id="pdt_post">
+        产品海报
       </div>
-      <div class="ori_text">
-        <p>
-          元素丰富，结构清晰的海报 <a href="detail-page-1.html">详情</a>
-        </p>
-        <span class="tagContent">版式</span>
-        <span class="tagContent">色彩</span>
-        <span class="tagContent">元素</span>
-      </div>
-    </div>
-
-    <hr>
-
-    <div>
-      <h2>极有家</h2>
-      <img class="mainPic" id="mainPic01" src="images/0002.jpg" alt="0002">
-      <p>
-        描述 <a href="detail-page-1.html">详情</a>
-      </p>
-      <span class="tagContent">版式</span>
-      <span class="tagContent">色彩</span>
-      <span class="tagContent">元素</span>
-    </div>
-
-    <div>
-      <h2>极有家</h2>
-      <img class="mainPic" id="mainPic01" src="images/0002.jpg" alt="0002">
-      <p>
-        描述 <a href="detail-page-1.html">详情</a>
-      </p>
-      <span class="tagContent">版式</span>
-      <span class="tagContent">色彩</span>
-      <span class="tagContent">元素</span>
-      <button type="button" name="button">off</button>
-
-      <button type="button" name="button" download="images/0002.jpg">download</button>
-      <p><a download="images/0002.jpg">download</a></p>
-      <hr>
-    </div>
-
-    <div>
-      <div class="test">
-        <span><img src="" style="width:200px; border:1px;"></span>
-        <span><img src="" style="width:200px; border:1px;"></span>
-      </div>
-      <div class="test" style="margin:100px auto;">
-        <span><img src="" style="width:200px; border:1px;"></span>
-        <span><img src="" style="width:200px; border:1px;"></span>
-      </div>
-    </div>
-
-    <div class="ori01">
-      <div class="ori_image_01">
-        <div class="">
-          <div class="">
-            <img class="ori_01_image" src="images/2016-11-22-23-56-25.jpg" alt="蓝黄帽子">
-          </div>
-
-          <div class="">
-            left part
-          </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
         </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+          </div>
+          <div class="block2_content">
+            <p>潮流所向</p>
+            <p>悦人悦己</p>
+            <p>潮流所向</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="designer_says">
+        设计师说
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
       </div>
 
-      <div class="ori_text">
-        right part
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="pdt_info">
+        产品信息
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
       </div>
 
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="fabric_display">
+        面料展示
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="model_display">
+        模特展示
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="lay_display">
+        平铺展示
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="detail_display">
+        细节展示
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="block1">
+      <div class="block1_tt" id="service_notice">
+        服务说明
+      </div>
+      <div class="block_side_nav">
+        <div class="block_side_nav_btn">
+          风格1
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+
+        </div>
+        <div class="block_side_nav_btn">
+
+          风格2
+        </div>
+
+      </div>
+
+      <div class="block1_content">
+        <div class="block2">
+          <div class="block2_tt">
+            <div class="block2_content">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
   </main>
-
-  <footer>
-    <p id="btmVersion">version 1.0.0</p>
-  </footer>
-  <script src="scripts/main.js"></script>
 </body>
 </html>
