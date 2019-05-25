@@ -75,6 +75,33 @@ main {
   display: block;
   border: none;
 }
+#ghostTxtArea01{
+  opacity: 0;
+}
+#txt_notice{
+  position: fixed;
+  right:10px;
+  top:20px;
+}
+.copy_notice00{
+  opacity: 0;
+}
+.copy_notice0{
+  opacity: 0;
+  animation:once_pop0 0.5s 1;
+}
+@keyframes once_pop0 {
+from{opacity: 1}
+to{opacity: 0}
+}
+.copy_notice{
+  opacity:0;
+  animation:once_pop 0.5s 1;
+}
+@keyframes once_pop {
+from{opacity: 1}
+to{opacity: 0}
+}
 </style>
 
 </head>
@@ -88,6 +115,9 @@ main {
       <div class="nav_btn">Models</div>
     </div>
   </nav>
+  <div id="txt_notice" class="copy_notice00">
+    复制成功
+  </div>
   <div class="side_nav">
     <div class="side_nav_btn" >
         <a href="#pdt_post">产品海报</a>
@@ -115,6 +145,7 @@ main {
     </div>
   </div>
   <main>
+    <textarea id="ghostTxtArea01" rows="1" cols="80">i am ghost</textarea>
     <div class="block1">
       <div class="block1_tt" id="pdt_post">
         产品海报
@@ -139,10 +170,18 @@ main {
           <div class="block2_tt">
           </div>
           <div class="block2_content">
-            <p>潮流所向</p>
-            <p>悦人悦己</p>
-            <p>潮流所向</p>
+            <p onclick="copyText03(this)">潮流所向</p>
+            <p onclick="copyText03(this)">悦人悦己</p>
+            <p onclick="copyText03(this)">new style</p>
+            <p onclick="copyText03(this)"> 方法 先替换，再复制</p>
 
+<!--          <textarea id="txtArea01" rows="1" cols="80" onclick="copyText()">hello click me 002</textarea>
+            <textarea id="txtArea02" rows="1" cols="80" onclick="copyText02(this)">fine thank you</textarea>
+            <textarea class="txtArea02" rows="1" cols="80" onclick="copyText02(this)">text content 003</textarea>
+            <textarea class="txtArea02" rows="1" cols="80" onclick="copyText02(this)">text content 004</textarea>
+            <textarea id="txtArea02" rows="1" cols="80" onclick="copyText02(this)">fine thank you</textarea>
+            <textarea id="txtArea02" rows="1" cols="80" onclick="copyText02(this)">fine thank you</textarea>
+-->
           </div>
 
         </div>
@@ -173,9 +212,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">new style</p>
+              <p onclick="copyText03(this)">new style</p>
+              <p onclick="copyText03(this)">new style</p>
 
             </div>
 
@@ -209,9 +248,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">尺码说明</p>
+              <p onclick="copyText03(this)">注意事项</p>
+              <p onclick="copyText03(this)">友情提示</p>
 
             </div>
 
@@ -245,9 +284,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">面料成分</p>
+              <p onclick="copyText03(this)">面料 里料</p>
+              <p onclick="copyText03(this)">潮流所向</p>
 
             </div>
 
@@ -281,9 +320,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
 
             </div>
 
@@ -317,9 +356,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
 
             </div>
 
@@ -353,9 +392,9 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
+              <p onclick="copyText03(this)">潮流所向</p>
 
             </div>
 
@@ -389,9 +428,7 @@ main {
         <div class="block2">
           <div class="block2_tt">
             <div class="block2_content">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
-              <input type="text" name="" value="超酷一夏$npsb风尚由我" onclik="copyForPaste()">
+              <p onclick="copyText03(this)">潮流所向</p>
 
             </div>
 
@@ -403,5 +440,40 @@ main {
     </div>
 
   </main>
+  <script type="text/javascript">
+  /*function fTest01(){
+    alert ("test");
+  }
+  function copyText(){
+    var inp;
+    inp=document.getElementById("txtArea01");
+    inp.select();
+    document.execCommand("copy");
+    //alert ("copy");
+  }
+  function copyText02(obj){
+    obj.select();
+    document.execCommand("copy");
+  //  alert ("copyText02");
+}*/
+  function copyText03(obj){
+    var txtCtt01=obj.innerHTML;
+    var oGhostTxt= document.getElementById("ghostTxtArea01");
+    oGhostTxt.value=txtCtt01;
+    oGhostTxt.select();
+    document.execCommand("copy");
+    var oTxtNotice=document.getElementById("txt_notice");
+    oTxtNotice.className=changeNotice();
+    function changeNotice(){
+      if (oTxtNotice.className!=="copy_notice"){
+        return "copy_notice"
+      } else{return "copy_notice0"}
+    }
+
+  //  alert (txtCtt01);
+  }
+
+
+  </script>
 </body>
 </html>
